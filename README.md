@@ -14,3 +14,34 @@ var app = http.createServer(function(request,response){
 
 
 22.03.14
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+let count = 0;
+
+rl.on('line', (input) => {
+    console.log(`Recived : ${input}`);
+    count += 1;
+    if (count === 3) {
+        rl.close();
+    }
+});
+
+---
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+rl.question('what do you think of node.js? ', (answer) => {
+    console.log(`Thank you for your valuable feedback: ${answer}`);
+    rl.close();
+});
