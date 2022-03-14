@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/default.css">
+  <!--기본 CSS-->
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <!--공통 CSS-->
+  <link rel="stylesheet" href="../../assets/css/contents.css">
+  <!--콘텐츠 CSS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Human Pay</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- 중복 확인 팝업창-->
+    <!-- *팝업창 활성화시, 아래 dark_bg / pop_up 클래스에 active 클래스 추가해주세요. -->
+    <!-- *body 태그에 hidden 클래스 추가해주세요.(배경 스크롤 동작 비활성화) -->
+    <div class="dark_bg"></div>
+    <!-- INPUT 입력 시 중복여부 확인 팝업창 노출-->
+    <div class="pop_up">
+      <p>중복 확인</p>
+      <span>이미 사용중인 아이디 입니다.<br />다시 입력해 주세요.</span>
+      <button class="pop_close">확인</button>
+    </div>
+    <!-- //중복 확인 팝업창-->
+    <!-- header -->
+    <header class="flex_between">
+      <a href="#"><img src="../../assets/img/layout/svg/icon_arrow_left.svg" alt="my page button"></a>
+      <p>가맹점 가입</p> <!-- 페이지 헤더 타이틀 -->
+      <a href="#"><img src="../../assets/img/layout/svg/icon_close.svg" alt="my page button"></a>
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="contents_franchise">
+
+      <div class="step_icon"><img src="../../assets/img/layout/svg/icon_step_02.svg" alt=""></div>
+      <div class="franchising_info">
+        <p>사업자 및 가맹점 <br /> 정보를 입력해 주세요.</p>
+        <span>모두 입력해 주셔야 다음 페이지로 이동 가능합니다.</span>
+      </div>
+
+      <!-- 신청자 정보 내역 -->
+      <div class="applicant_info">
+        <h2>신청자 정보</h2>
+        <ul>
+          <li>
+            <p>이름</p><span>김**</span><!-- 신청자 정보 : 이름 -->
+          </li>
+          <li>
+            <p>휴대폰 번호</p><span>010-12**-56**</span> <!-- 신청자 정보 : 휴대폰번호 -->
+          </li>
+        </ul>
+        <p>신청자 정보와 제출하신 사업자등록증 상의 대표자명이 다를 경우, 가맹점 가입이 제한될 수 있습니다.</p>
+        <p>가맹점 가입 심사 결과는 등록된 휴대폰 번호로 문자 발송됩니다.</p>
+      </div>
+      <!-- //신청자 정보 내역 -->
+
+      <h2 class="applicant_title">사업자 등록 정보 입력</h2>
+
+      <!-- 사업자 등록 번호 영역 -->
+      <div class="business_num_box">
+        <h3 class="applicant_sub_title">사업자등록번호</h3>
+        <div class="flex_end">
+          <label class="business_num"><input type="number" placeholder="'-' 없이 숫자만 입력"></label>
+          <!-- 사업자 등록번호 입력 INPUT -->
+          <button class="overlap_btn">중복 확인</button> <!-- 활성화 될 경우 class 명에 on_color 추가해주세요. -->
+        </div>
+      </div>
+      <!-- //사업자 등록 번호 영역 -->
+
+      <!-- 상호 & 법인명 영역 -->
+      <div class="business_name_box">
+        <h3 class="applicant_sub_title">상호 또는 법인명(단체명)</h3>
+        <label class="applicant_input"><input type="text" placeholder="상호 또는 법인명(단체명)"></label>
+        <div class="business_select_box">
+
+          <!-- 사업자유형 select box -->
+          <div class="category_select_box">
+            <div class="category_select">
+              <span>사업자 유형</span>
+              <img src="../../assets/img/layout/svg/icon_shevron_down.svg" class="category_select_arrow" alt="" />
+            </div>
+            <div class="scroll_list">
+              <!-- list box -->
+              <ul class="scroll_box">
+                <!-- scroll box -->
+                <li>비영리단체</li>
+                <li>일반과세자</li>
+                <li>간이과세자</li>
+                <li>비영리단체</li>
+                <li>일반과세자</li>
+                <li>간이과세자</li>
+              </ul>
+            </div>
+          </div>
+          <!-- //사업자유형 select box -->
+
+          <!-- 과세여부 select box -->
+          <div class="whether_select_box">
+            <div class="whether_select">
+              <span>과세 여부</span>
+              <img src="../../assets/img/layout/svg/icon_shevron_down.svg" class="whether_select_arrow" alt="" />
+            </div>
+            <div class="scroll_list">
+              <!-- list box -->
+              <ul class="scroll_box">
+                <!-- scroll box -->
+                <li>일반과세</li>
+                <li>간이 / 면세</li>
+              </ul>
+            </div>
+          </div>
+          <!-- //과세여부 select box -->
+        </div>
+      </div>
+      <!-- //상호 & 법인명 영역 -->
+
+      <!-- 대표자 이름 입력 영역 -->
+      <div class="represent_box">
+        <h3 class="applicant_sub_title">대표자</h3>
+        <label class="applicant_input"><input type="text" placeholder="사업자등록증 상 대표자 명"></label>
+        <!-- 사업자등록증 대표자 명 입력 INPUT -->
+      </div>
+      <!-- //대표자 이름 입력 영역 -->
+
+      <!-- 신분증 / 서명 업로드 영역 -->
+      <div class="represent_box">
+        <h3 class="applicant_sub_title">신분증 및 자필서명을 손에 든 사진 업로드</h3>
+        <!-- 드래그 앤 드롭 영역 -->
+        <div class="drag_drop_zone">
+          <img class="drop_img off" src="#" alt="" /> <!-- 파일 업로드시 src 생성 -->
+          <img class="icon_img" src="../../assets/img/layout/svg/icon_upload.svg" alt=""><!-- 파일 업로드시 display : none -->
+          <p>파일을 업로드 해주세요.</p> <!-- 파일 업로드시 display : none -->
+          <label><input type="file" class="drop_upload"></label><!-- 업로드 버튼 -->
+        </div>
+        <!-- //드래그 앤 드롭 영역 -->
+        <p>가맹점 심사 담당자가 내용을 확인할 수 있는 사업자등록증 스캔 이미지 또는 사진을 등록해 주세요.</p>
+      </div>
+      <!-- //신분증 / 서명 업로드 영역 -->
+
+      <h2 class="applicant_title">가맹점 등록 정보 입력</h2>
+
+      <!-- 가맹점 명 입력 영역 -->
+      <div class="franchise_name_box">
+        <h3 class="applicant_sub_title">가맹점 명</h3>
+        <label class="applicant_input"><input type="text" placeholder="고객에게 보이는 가맹점 명"></label> <!-- 가맹점 명 입력 INPUT -->
+        <div class="applicant_select_box">
+          <div class="applicant_select">
+            <!-- 유형 select box -->
+            <span>유형</span>
+            <img src="../../assets/img/layout/svg/icon_shevron_down.svg" alt="" />
+          </div>
+          <div class="scroll_list">
+            <ul class="scroll_box">
+              <!-- 유형 option list box -->
+              <li>슈퍼 / 마트</li>
+              <li>레저</li>
+              <li>미용 / 뷰티 / 위생</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- //가맹점 명 입력 영역 -->
+
+      <!-- 대표번호 입력 영역 -->
+      <div class="franchise_num_box">
+        <h3 class="applicant_sub_title">대표번호 (전화)</h3>
+        <label class="applicant_input"><input type="number" placeholder="'-' 없이 숫자만 입력" /></label><!-- 대표번호 입력 INPUT -->
+      </div>
+      <!-- //대표번호 입력 영역 -->
+
+      <!-- 가맹점 주소 입력 영역 -->
+      <div class="franchise_adress_box">
+        <h3 class="applicant_sub_title">주소</h3>
+        <div class="flex_end">
+          <label class="zip_code"><input type="text" placeholder="우편번호" readonly /></label>
+          <!-- 우편번호 입력 INPUT readonly -->
+          <button class="address_btn">우편번호 검색</button> <!-- 검색 전 활성화 버튼 -->
+          <button class="address_on_btn">우편 번호</button> <!-- 검색 후 활성화 버튼 -->
+        </div>
+        <label class="applicant_input"><input type="text" placeholder="주소 입력" readonly /></label>
+        <!-- 주소 입력 INPUT readonly -->
+        <label class="applicant_input"><input type="text" placeholder="상세주소 입력" /></label> <!-- 상세주소 입력 INPUT -->
+      </div>
+      <!-- //가맹점 주소 입력 영역 -->
+
+      <!-- 추천인 입력 영역 -->
+      <div class="franchise_recom_box">
+        <h3 class="applicant_sub_title">추천인 입력</h3>
+        <div class="flex_end">
+          <label class="recom_id"><input type="text" placeholder="추천인 아이디" /></label><!-- 추천인 아이디 입력 INPUT -->
+          <button class="qr_btn">QR 입력</button> <!-- 활성화 될 경우 class 명에 on_color 추가해주세요. -->
+        </div>
+      </div>
+      <!-- //추천인 입력 영역 -->
+
+
+      <!-- 하단 버튼 영역 -->
+      <!-- 모든 입력이 완료 될 경우 class 명에 inactive 지워주세요. -->
+      <div class="btn_basic inactive"><button>가맹점 가입 요청</button></div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+    <!-- //contents_cont -->
+
+  </div>
+  <!--//wrapper 최상위 태그 -->
+  <script>
+
+    //  select box
+    let selectFlagFranchise;
+    $('.applicant_select, .category_select, .whether_select').on('click', function () {
+      $(this).toggleClass('selected');
+      if ($(this).hasClass('selected')) {
+        $(this).find('img').addClass('down')
+        $(this).parent().find('.scroll_list').show();
+      } else {
+        $(this).find('img').removeClass('down')
+        $(this).parent().find('.scroll_list').hide();
+      }
+    })
+
+    // select box 내 option 클릭시 벨류값 이동 및 option slideUp
+    $('.applicant_select_box li, .category_select_box li, .whether_select_box li').on('click', function () {
+      console.log($(this).closest("span"))
+      /*
+      $(this).parents('.scroll_list').parent().find('span').text($(this).text());
+      $(this).parents().find('img').removeClass('down')
+      $(this).parents('.scroll_list').hide();
+      $(this).parents('.scroll_list').parent().find('div').removeClass('selected');
+      */
+    });
+
+    // input 값 입력 시 버튼 색 및 border 색 변경
+    $('.business_num > input, .recom_id > input, .applicant_input > input ').keyup(function (e) {
+      let content = $(this).val();
+      if (content.length == 0 || content == '') {
+        $(this).parent().css('border-bottom', '1px solid var(--inactive)');
+        $(this).parent().next('button').removeClass('on_color')
+      } else {
+        $(this).parent().css('border-bottom', '1px solid var(--main)');
+        $(this).parent().next('button').addClass('on_color')
+      }
+    });
+
+    // 우편번호 검색 클릭 시 버튼 색 및 border 색 변경
+    $('.address_btn').on('click', function () {
+      $(this).css('display', 'none');
+      $('.address_on_btn').css({ 'display': 'block', 'padding': '5px 15px' });
+      $('.zip_code').css({ 'width': 'calc(100% - 97px)', 'border-bottom': '1px solid var(--main)' })
+      $(this).parent().siblings('label:eq(0)').css('border-bottom', '1px solid var(--main)');
+    });
+
+    // 이미지 드래그 앤 드롭 영역
+    var uploadBox = $('.drag_drop_zone');
+
+    uploadBox.on({
+      'dragleave': function (e) {
+        uploadBox.css({ 'border': "1px dashed rgb(128, 128, 128)", backgroundColor: "rgb(255, 255, 255)" });
+      },
+      'dragover': function (e) {
+        e.preventDefault();
+        uploadBox.css({ 'border': "1px dashed rgb(28, 0, 185)", backgroundColor: "rgb(175, 201, 250)" });
+      },
+      'drop': function (e) {
+        e.preventDefault();
+        uploadBox.css({ 'border': "1px dashed rgb(128, 128, 128)", backgroundColor: "rgb(255, 255, 255)" });
+
+        var files = e.originalEvent.dataTransfer.files[0];
+        var filesArr = Array.prototype.slice.call(files);
+
+        if (files.type.match("image.*")) {
+          $('.drop_img').removeClass('off')
+          $('.drag_drop_zone > p, .icon_img').addClass('off');
+          sel_file = files;
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('.drop_img').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(sel_file);
+
+        } else {
+
+          alert("잘못된 파일입니다.");
+          $(".drop_img").val("");
+          return;
+
+        };
+      }
+    });
+
+    // 이미지 클릭 업로드 영역
+    var sele_file;
+
+    $('.drop_upload').on("change", function (e) {
+      var imgfiles = e.target.files[0];
+      var imgfilesArr = Array.prototype.slice.call(imgfiles);
+
+      if (imgfiles.type.match("image.*")) {
+        $('.drop_img').removeClass('off');
+        $('.drag_drop_zone > p, .icon_img').addClass('off');
+
+        sele_file = imgfiles;
+
+        var imgReader = new FileReader();
+
+        imgReader.onload = function (e) {
+          $('.drop_img').attr('src', e.target.result);
+        }
+        imgReader.readAsDataURL(imgfiles);
+
+      } else {
+        alert("잘못된 파일입니다.");
+        $(".drop_img").val("");
+        return;
+      };
+    });
+  </script>
+</body>
+
+</html>
