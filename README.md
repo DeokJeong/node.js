@@ -11,3 +11,6 @@ var fs = require('fs');
 var app = http.createServer(function(request,response){
 > http 내에 서비스 구축 기능 가져와서 '()'안의 내용을 실행한다
 > request 에서 받고 response 에서 반환 한다.
+
+
+22.03.14
