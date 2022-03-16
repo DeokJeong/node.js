@@ -31,7 +31,7 @@ rl.on('line', (input) => {
         rl.close();
     }
 });
-```
+
 ---
 
 const readline = require('readline');
@@ -45,7 +45,7 @@ rl.question('what do you think of node.js? ', (answer) => {
     console.log(`Thank you for your valuable feedback: ${answer}`);
     rl.close();
 });
-
+```
 22.03.16
 
 EJS 모듈
