@@ -14,7 +14,7 @@ var app = http.createServer(function(request,response){
 
 
 22.03.14
-
+```
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -48,14 +48,14 @@ rl.question('what do you think of node.js? ', (answer) => {
 
 22.03.16
 
-```EJS 모듈
+EJS 모듈
 > Embedded JavaScript Template
 > 특정 형식의 파일로부터 html페이지를 생성하는 템플릿 엔진
 
 설치 
 > npm istall ejs
 
-```express 모듈
+express 모듈
 > html 모듈보다 많은 기능을 내장하고 있음
 
 설치
