@@ -31,7 +31,7 @@ rl.on('line', (input) => {
         rl.close();
     }
 });
-
+```
 ---
 
 const readline = require('readline');
