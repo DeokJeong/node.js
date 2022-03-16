@@ -45,3 +45,18 @@ rl.question('what do you think of node.js? ', (answer) => {
     console.log(`Thank you for your valuable feedback: ${answer}`);
     rl.close();
 });
+
+22.03.16
+
+```EJS 모듈
+> Embedded JavaScript Template
+> 특정 형식의 파일로부터 html페이지를 생성하는 템플릿 엔진
+
+설치 
+> npm istall ejs
+
+```express 모듈
+> html 모듈보다 많은 기능을 내장하고 있음
+
+설치
+> npm istall express
