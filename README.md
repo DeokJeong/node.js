@@ -70,7 +70,9 @@ express 모듈
 
 
 22.03.18
-> multer : 파일 업로드 
+multer
+> 파일 업로드를 위해 multipart/form-data 를 다루기 위한 미들웨어
+> multipart가 아닌 폼에서는 동작하지 않음
 
 설치 
 > npm istall multer
