@@ -60,3 +60,12 @@ express 모듈
 
 설치
 > npm istall express
+
+22.03.17
+>node --inspect : 작성하면 서버 껐다켰다 안해도 됨
+>
+>git reset HEAD file명 : git add 잘못하면 쓰도록 함
+>
+>.gitignore 안에 add 하고싶지 않은 파일 이름 쓰면 add 안됨
+
+
