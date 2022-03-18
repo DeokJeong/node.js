@@ -50,6 +50,7 @@ rl.question('what do you think of node.js? ', (answer) => {
 
 EJS 모듈
 > Embedded JavaScript Template
+> 
 > 특정 형식의 파일로부터 html페이지를 생성하는 템플릿 엔진
 
 설치 
@@ -73,6 +74,7 @@ express 모듈
 
 multer 
 > 파일 업로드를 위해 multipart/form-data 를 다루기 위한 미들웨어
+> 
 > multipart가 아닌 폼에서는 동작하지 않음
 
 설치 
