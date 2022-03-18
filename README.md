@@ -69,3 +69,5 @@ express 모듈
 >.gitignore 안에 add 하고싶지 않은 파일 이름 쓰면 add 안됨
 
 
+22.03.18
+> multer : 파일 업로드 
