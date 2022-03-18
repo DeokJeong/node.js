@@ -71,3 +71,6 @@ express 모듈
 
 22.03.18
 > multer : 파일 업로드 
+
+설치 
+> npm istall multer
