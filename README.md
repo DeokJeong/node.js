@@ -78,4 +78,4 @@ multer
 > multipart가 아닌 폼에서는 동작하지 않음
 
 설치 
-> npm istall multer
+> npm istall multer   
