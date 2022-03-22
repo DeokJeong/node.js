@@ -79,3 +79,7 @@ multer
 
 설치 
 > npm istall multer   
+
+22.03.22 
+
+> js 공부
