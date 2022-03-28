@@ -101,7 +101,23 @@ multer
 
 '--depth=0' 옵션을 쓰지 않으면 의존성트리 전체가 출력된다고 한다.
 
-원하는 모듈의 내용과 버전이  확인
+원하는 모듈의 내용과 버전이 확인
+
+**CategoryInfo          : 보안 오류: (:) [], PSSecurityException**
+
+1. 관리자권한으로 PowerShell 실행
+2. ExecutionPolicy 를 검색하여 Restricted 가 떠있는지 확인
+3. Unrestricted 혹은 RemoteSigned 사용
+
+**Unrestricted 서명되지 않은 스크립트를 실행할 수 있음**
+
+**RemoteSigned 악의적인 스크립트를 실행할 위험이 있음**
+
+
+스크립트를 실행 가능,
+
+이미 실행한 스크립트와 로컬 컴퓨터에 작성한 스크립트에는 디지털 서명이 필요 없음
+
 
 
 
