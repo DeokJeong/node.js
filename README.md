@@ -3,7 +3,7 @@
 22.03.09
 
 var http = require('http');
-> require = node.js 기능 내 집합소에서 "http 라이브러리"를 가져와라
+> require = node.js 기능 내 집합소에서 "http 라이브러리"를 가져와라 
 
 var fs = require('fs');
 > node.js 기능 내 집합소에서 file system에 접근 및 제어 할 수 있도록 도와주는 모듈(기능의 집합체)을 가져와라
