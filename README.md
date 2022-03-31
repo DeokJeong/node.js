@@ -23,7 +23,7 @@ const rl = readline.createInterface({
 });
 
 let count = 0;
-
+ 
 rl.on('line', (input) => {
     console.log(`Recived : ${input}`);
     count += 1;
