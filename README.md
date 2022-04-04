@@ -118,6 +118,12 @@ multer
 
 이미 실행한 스크립트와 로컬 컴퓨터에 작성한 스크립트에는 디지털 서명이 필요 없음
 
+22.04.04
+react 로 선택해서 project 를 만들었음.
+
+cordova를 설치하려고 보니 지원하지않는다고 써있음
+
+[ERROR] Ionic doesn't support using Cordova with @ionic/react projects.
 
 
 
