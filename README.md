@@ -3,7 +3,7 @@
 22.03.09
 
 var http = require('http');
-> require = node.js 기능 내 집합소에서 "http 라이브러리"를 가져와라
+> require = node.js 기능 내 집합소에서 "http 라이브러리"를 가져와라 
 
 var fs = require('fs');
 > node.js 기능 내 집합소에서 file system에 접근 및 제어 할 수 있도록 도와주는 모듈(기능의 집합체)을 가져와라
@@ -13,7 +13,7 @@ var app = http.createServer(function(request,response){
 > request 에서 받고 response 에서 반환 한다.
 
 
-22.03.14
+22.03.14 
 ```
 const readline = require('readline');
 
@@ -23,7 +23,7 @@ const rl = readline.createInterface({
 });
 
 let count = 0;
-
+ 
 rl.on('line', (input) => {
     console.log(`Recived : ${input}`);
     count += 1;
@@ -78,4 +78,56 @@ multer
 > multipart가 아닌 폼에서는 동작하지 않음
 
 설치 
-> npm istall multer
+> npm istall multer   
+
+22.03.22 
+
+> js 공부
+
+22.03.23~03.25
+
+> js / swiper 공부
+
+22.03.28
+>IONIC 모듈 설치
+
+알수없는 오류로 계속된 설치 실패
+계속된 에러로 결국 경로따라 가서 모듈 전체를 삭제하고 재설치를 진행했음
+버전 확인을 했지만 ERR! 발생
+
+>npm ls -g --depth=0
+
+설치된 전역모듈 확인
+
+'--depth=0' 옵션을 쓰지 않으면 의존성트리 전체가 출력된다고 한다.
+
+원하는 모듈의 내용과 버전이 확인
+
+**CategoryInfo          : 보안 오류: (:) [], PSSecurityException**
+
+1. 관리자권한으로 PowerShell 실행
+2. ExecutionPolicy 를 검색하여 Restricted 가 떠있는지 확인
+3. Unrestricted 혹은 RemoteSigned 사용
+
+**Unrestricted 서명되지 않은 스크립트를 실행할 수 있음**
+
+**RemoteSigned 악의적인 스크립트를 실행할 위험이 있음**
+
+
+스크립트를 실행 가능,
+
+이미 실행한 스크립트와 로컬 컴퓨터에 작성한 스크립트에는 디지털 서명이 필요 없음
+
+22.04.04
+react 로 선택해서 project 를 만들었음.
+
+cordova를 설치하려고 보니 지원하지않는다고 써있음
+
+[ERROR] Ionic doesn't support using Cordova with @ionic/react projects.
+
+
+
+
+
+
+
