@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .num_box {
+        width: 800px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .num_box button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .num_pick {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 40px;
+    }
+
+    .num_pick p {
+        margin-right: 10px;
+    }
+
+    .num_box p {
+        margin-right: 10px;
+    }
+
+    .num_box input {
+        margin-right: 10px;
+    }
+</style>
+
+
+<body>
+    <h2>Random Number Game</h2>
+    <div class="num_pick" id="pick_form">
+        <p>Generate a number between 0 and</p>
+        <input type="text" />
+    </div>
+    <div class="num_box" id="random_form">
+        <p>Guess the number : </p>
+        <input type="text" />
+        <button>play</button>
+    </div>
+    <div id="text">
+
+    </div>
+    <script>
+        const pickNum = document.querySelector('#pick_form input');
+        const randomInput = document.querySelector('#random_form input');
+        const randomBtn = document.querySelector('#random_form button');
+
+        function onLoginBtnClick() {
+            const pickVal = pickNum.value;
+            const ranInput = randomInput.value;
+            if (ranInput === pickVal) {
+                document.querySelector("#text").innerHTML = "<p>you chose " + ranInput + " ,the machine chose:" + Math.ceil(Math.random() * pickVal) + "</p>";
+            }
+        };
+
+        randomBtn.addEventListener('click', onLoginBtnClick);
+
+    </script>
+
+</body>
+
+
+</html>
