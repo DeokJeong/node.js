@@ -44,11 +44,11 @@
 
 <body>
     <h2>Random Number Game</h2>
-    <div class="num_pick" id="pick_form">
+    <div class="num_pick" id="random_form">
         <p>Generate a number between 0 and</p>
         <input type="text" />
     </div>
-    <div class="num_box" id="random_form">
+    <div class="num_box" id="pick_form">
         <p>Guess the number : </p>
         <input type="text" />
         <button>play</button>
@@ -59,14 +59,20 @@
     <script>
         const pickNum = document.querySelector('#pick_form input');
         const randomInput = document.querySelector('#random_form input');
-        const randomBtn = document.querySelector('#random_form button');
+        const randomBtn = document.querySelector('#pick_form button');
 
         function onLoginBtnClick() {
             const pickVal = pickNum.value;
-            const ranInput = randomInput.value;
-            if (ranInput === pickVal) {
-                document.querySelector("#text").innerHTML = "<p>you chose " + ranInput + " ,the machine chose:" + Math.ceil(Math.random() * pickVal) + "</p>";
+            const fixPoint = randomInput.value;
+            const picNum = parseInt(pickVal);
+            const randomNum = Math.ceil(Math.random() * fixPoint)
+
+            if (picNum === randomNum) {
+                document.querySelector("#text").innerHTML = "<p>you chose " + pickVal + " ,the machine chose:" + randomNum + "<br/>You Win!</p>";
+            } else {
+                document.querySelector("#text").innerHTML = "<p>you chose " + pickVal + " ,the machine chose:" + randomNum + "<br/>You lost!</p>";
             }
+
         };
 
         randomBtn.addEventListener('click', onLoginBtnClick);
