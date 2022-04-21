@@ -25,23 +25,6 @@
     <button class="colorBtn">Give me color</button>
 
 
-    <script>
-        const colorBtn = document.querySelector('.colorBtn');
-
-
-        function BackgroundRandomBtn() {
-            const colorPack = ['red', 'yellow', 'blue', 'green', 'aqua', 'coral', 'chocholete', 'orange', 'gold', 'gray', 'pink', 'salmon'];
-            const colorLen = colorPack.length;
-            const leftColor = Math.floor(Math.random() * colorLen);
-            const rightColor = Math.floor(Math.random() * colorLen);
-
-            document.body.style.background = "linear-gradient(to right," + colorPack[leftColor] + "," + colorPack[rightColor] + ")";
-        }
-
-        colorBtn.addEventListener('click', BackgroundRandomBtn);
-
-    </script>
-
 </body>
 
 
