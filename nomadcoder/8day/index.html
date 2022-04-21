@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./8day.js"></script>
+</head>
+<style>
+    .colorBtn {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 5px;
+    }
+</style>
+
+
+<body>
+
+
+    <button class="colorBtn">Give me color</button>
+
+
+    <script>
+        const colorBtn = document.querySelector('.colorBtn');
+
+
+        function BackgroundRandomBtn() {
+            const colorPack = ['red', 'yellow', 'blue', 'green', 'aqua', 'coral', 'chocholete', 'orange', 'gold', 'gray', 'pink', 'salmon'];
+            const colorLen = colorPack.length;
+            const leftColor = Math.floor(Math.random() * colorLen);
+            const rightColor = Math.floor(Math.random() * colorLen);
+
+            document.body.style.background = "linear-gradient(to right," + colorPack[leftColor] + "," + colorPack[rightColor] + ")";
+        }
+
+        colorBtn.addEventListener('click', BackgroundRandomBtn);
+
+    </script>
+
+</body>
+
+
+</html>
