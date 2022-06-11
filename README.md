@@ -133,7 +133,8 @@ cordova를 설치하려고 보니 지원하지않는다고 써있음
 회사일로 react 보다 react native를 먼저 배우게 되었다.
 책(리엑트 네이티브)에 있는 내용을 바탕으로 공부해본다. : 다른 PC에서도 다운받기위해 설치방법 기재
 
-**window 기준 설치방법 **
+>window 기준 설치방법 
+
 ```
 1 - node.js 공식 홈페이지 https://nodejs.org/ko - LTS 다운로드
     설치 후 cmd를 열어 node -v 를 입력해서 버전이 뜨는지 확인한다
