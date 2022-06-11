@@ -133,10 +133,8 @@ cordova를 설치하려고 보니 지원하지않는다고 써있음
 회사일로 react 보다 react native를 먼저 배우게 되었다.
 책(리엑트 네이티브)에 있는 내용을 바탕으로 공부해본다. : 다른 PC에서도 다운받기위해 설치방법 기재
 
+**window 기준 설치방법 **
 ```
-**window 기준**
-
-[1] 설치
 1 - node.js 공식 홈페이지 https://nodejs.org/ko - LTS 다운로드
     설치 후 cmd를 열어 node -v 를 입력해서 버전이 뜨는지 확인한다
     node.js를 설치하면 npm도 설치되기때문에 npm -v 를 입력하여 버전이 뜨는지 확인한다.
@@ -163,8 +161,8 @@ cordova를 설치하려고 보니 지원하지않는다고 써있음
     2) '고급 시스템 설정' 클릭 후 '환경변수'클릭
     3) '환경변수' - '시스템변수' - '새로만들기' 순으로 클릭 ANDROID_HOME 변수 설정 경로참고 : C:\Users\사용자계정\AppData\Local\Android\Sdk
     
-6 - VS Code 설치
-    
+6 - VS Code 설치를 마지막으로 React Native 의 설치는 끝!
+   
 ```
     
     
